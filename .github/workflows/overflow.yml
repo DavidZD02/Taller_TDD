@@ -27,4 +27,10 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 'pypy3.9'
+          
+      - name: Create virtualenv and activate virtualenv
+        run: |
+          pip install virtualenv
+          virtualenv env
+          source env/bin/activate
 
