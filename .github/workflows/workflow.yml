@@ -30,7 +30,6 @@ jobs:
           
       - name: Create virtualenv and activate virtualenv
         run: |
-          python3 -m pip install --upgrade pip
           pip install virtualenv
           virtualenv env
           source env/bin/activate
