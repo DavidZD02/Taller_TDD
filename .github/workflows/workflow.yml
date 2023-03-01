@@ -30,6 +30,7 @@ jobs:
           
       - name: create env
         run: |
+          ls
           pip install virtualenv
           virtualenv env
           source env/bin/activate
